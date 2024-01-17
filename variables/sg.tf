@@ -4,7 +4,7 @@ resource "aws_security_group" "roboshop-all" {
     #vpc_id      = aws_vpc.main.id
 
    ingress {
-    description      = "Allow All poerts"
+    description      = "Allow All ports"
     from_port        = var.inbound-from_port
     to_port          = 0
     protocol         = "tcp"
